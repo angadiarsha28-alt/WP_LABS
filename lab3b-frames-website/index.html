@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Two-pane book information site: pick a title on the left, read about it on the right.">
+<title>Book Information Website - Frames</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%93%9A</text></svg>">
+<style>
+    /* Layout for the two-pane frame view lives here so it applies
+       even before style.css finishes loading inside each iframe. */
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .frame-container {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+    }
+    .frame-container iframe {
+        border: none;
+        height: 100%;
+    }
+    #listFrame {
+        width: 25%;
+        border-right: 2px solid #c9b89a;
+    }
+    #infoFrame {
+        width: 75%;
+    }
+    @media (max-width: 600px) {
+        .frame-container {
+            flex-direction: column;
+        }
+        #listFrame, #infoFrame {
+            width: 100%;
+        }
+        #listFrame {
+            height: 35%;
+            border-right: none;
+            border-bottom: 2px solid #c9b89a;
+        }
+        #infoFrame {
+            height: 65%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!--
+    NOTE: The original lab used the deprecated <frameset>/<frame> tags,
+    which every modern browser (Chrome, Firefox, Edge, Safari) has removed
+    support for -- that's why nothing rendered. Two same-page <iframe>s
+    reproduce the exact same "book list on the left, details on the
+    right" behaviour and work everywhere. The links in booklist.html
+    already use target="infoFrame", and target="" works on an <iframe
+    name="..."> exactly like it did on the old <frame name="...">, so no
+    other file needed to change.
+-->
+<div class="frame-container">
+    <iframe src="booklist.html" name="listFrame" id="listFrame" title="Book list"></iframe>
+    <iframe src="welcome.html" name="infoFrame" id="infoFrame" title="Book information"></iframe>
+</div>
+
+</body>
+</html>

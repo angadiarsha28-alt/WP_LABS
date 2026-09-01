@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A product information table listing gadgets with images, brand, price, and description.">
+<title>Products Available</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%9B%92</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Products Available</h1>
+
+<div class="table-toolbar">
+    <label for="search" class="visually-hidden">Search products</label>
+    <input type="search" id="search" placeholder="Search by product or brand&hellip;" autocomplete="off">
+</div>
+
+<div class="table-wrapper">
+    <table>
+        <caption class="visually-hidden">List of available products with brand, price, and description</caption>
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Product</th>
+                <th scope="col">Brand</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+            </tr>
+        </thead>
+        <tbody id="productBody">
+            <tr>
+                <td><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22%3E %3Crect width=%2260%22 height=%2260%22 rx=%226%22 fill=%22%231c3d5a%22/%3E %3Ctext x=%2230%22 y=%2235%22 font-family=%22Arial, sans-serif%22 font-size=%2212%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 font-weight=%22bold%22%3EPhone%3C/text%3E %3C/svg%3E" alt="Smartphone"></td>
+                <td>Nebula Phone 14 Pro</td>
+                <td>Apex</td>
+                <td class="price">Rs. 69,999</td>
+                <td>A powerful smartphone with a 6.7 inch display, triple camera
+                    setup, and all-day battery life.</td>
+            </tr>
+            <tr>
+                <td><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22%3E %3Crect width=%2260%22 height=%2260%22 rx=%226%22 fill=%22%231c3d5a%22/%3E %3Ctext x=%2230%22 y=%2235%22 font-family=%22Arial, sans-serif%22 font-size=%2212%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 font-weight=%22bold%22%3EWatch%3C/text%3E %3C/svg%3E" alt="Smartwatch"></td>
+                <td>Samsung Galaxy Watch 7 Pro</td>
+                <td>Samsung</td>
+                <td class="price">Rs. 22,499</td>
+                <td>A fitness-focused smartwatch with heart rate monitoring, sleep
+                    tracking, and a bright always-on display.</td>
+            </tr>
+            <tr>
+                <td><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22%3E %3Crect width=%2260%22 height=%2260%22 rx=%226%22 fill=%22%231c3d5a%22/%3E %3Ctext x=%2230%22 y=%2235%22 font-family=%22Arial, sans-serif%22 font-size=%2212%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 font-weight=%22bold%22%3ESpkr%3C/text%3E %3C/svg%3E" alt="Speaker"></td>
+                <td>Boat Stone Bluetooth Speaker</td>
+                <td>Boat</td>
+                <td class="price">Rs. 2,999</td>
+                <td>A compact portable Bluetooth speaker with punchy bass and a
+                    water-resistant body, great for outdoor use.</td>
+            </tr>
+            <tr>
+                <td><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22%3E %3Crect width=%2260%22 height=%2260%22 rx=%226%22 fill=%22%231c3d5a%22/%3E %3Ctext x=%2230%22 y=%2235%22 font-family=%22Arial, sans-serif%22 font-size=%2212%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 font-weight=%22bold%22%3EBuds%3C/text%3E %3C/svg%3E" alt="Earbuds"></td>
+                <td>OnePlus Buds Pro 2</td>
+                <td>OnePlus</td>
+                <td class="price">Rs. 8,499</td>
+                <td>Wireless earbuds with active noise cancellation, dual drivers, and
+                    a comfortable in-ear fit.</td>
+            </tr>
+            <tr>
+                <td><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22%3E %3Crect width=%2260%22 height=%2260%22 rx=%226%22 fill=%22%231c3d5a%22/%3E %3Ctext x=%2230%22 y=%2235%22 font-family=%22Arial, sans-serif%22 font-size=%2212%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 font-weight=%22bold%22%3ELptp%3C/text%3E %3C/svg%3E" alt="Laptop"></td>
+                <td>Aurora Laptop 15 Air</td>
+                <td>Dell</td>
+                <td class="price">Rs. 54,999</td>
+                <td>A lightweight 15-inch laptop with a full-HD display, all-day
+                    battery, and enough power for everyday productivity.</td>
+            </tr>
+            <tr>
+                <td><img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22%3E %3Crect width=%2260%22 height=%2260%22 rx=%226%22 fill=%22%231c3d5a%22/%3E %3Ctext x=%2230%22 y=%2235%22 font-family=%22Arial, sans-serif%22 font-size=%2212%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 font-weight=%22bold%22%3ECam%3C/text%3E %3C/svg%3E" alt="Camera"></td>
+                <td>Pixel Shot Mirrorless Camera</td>
+                <td>Sony</td>
+                <td class="price">Rs. 74,999</td>
+                <td>A compact mirrorless camera with a 24MP sensor, fast autofocus,
+                    and 4K video recording for hobbyists and creators.</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="noResults" class="no-results" hidden>No products match your search.</p>
+</div>
+
+<script>
+    // Simple client-side live search filter — no framework required.
+    const searchBox = document.getElementById('search');
+    const rows = Array.from(document.querySelectorAll('#productBody tr'));
+    const noResults = document.getElementById('noResults');
+
+    searchBox.addEventListener('input', function () {
+        const query = searchBox.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        rows.forEach(function (row) {
+            const product = row.children[1].textContent.toLowerCase();
+            const brand = row.children[2].textContent.toLowerCase();
+            const isMatch = product.includes(query) || brand.includes(query);
+            row.hidden = !isMatch;
+            if (isMatch) visibleCount++;
+        });
+
+        noResults.hidden = visibleCount !== 0;
+    });
+</script>
+
+</body>
+</html>

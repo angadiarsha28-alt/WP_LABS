@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book List</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="list-body">
+
+<h2>Book List</h2>
+<ul id="bookList">
+    <li><a href="it_ends_with_us.html" target="infoFrame">It Ends with Us</a></li>
+    <li><a href="it_starts_with_us.html" target="infoFrame">It Starts with Us</a></li>
+    <li><a href="happy_place.html" target="infoFrame">Happy Place</a></li>
+    <li><a href="verity.html" target="infoFrame">Verity</a></li>
+</ul>
+
+<a class="clear-link" href="welcome.html" target="infoFrame" id="clearLink">Clear info</a>
+
+<script>
+    // Highlight the currently selected book in the left frame.
+    // Pure progressive enhancement — the links work with plain HTML/CSS alone.
+    var links = document.querySelectorAll('#bookList a, #clearLink');
+    links.forEach(function (link) {
+        link.addEventListener('click', function () {
+            links.forEach(function (l) { l.classList.remove('active'); });
+            link.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>

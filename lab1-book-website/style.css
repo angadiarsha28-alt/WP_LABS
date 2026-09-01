@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f0e8;
+    margin: 0;
+    padding: 20px;
+    color: #2b2b2b;
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    color: #4a2c2a;
+    margin-top: 0;
+}
+
+.tagline {
+    text-align: center;
+    color: #6b5a4a;
+    margin-top: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+ul.book-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.book-list li {
+    margin: 10px 0;
+}
+
+ul.book-list li a {
+    display: block;
+    padding: 12px 15px;
+    background-color: #e8dfd0;
+    color: #4a2c2a;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border-left: 5px solid #8b5e3c;
+    transition: background-color 0.2s, transform 0.15s;
+}
+
+ul.book-list li a:hover,
+ul.book-list li a:focus-visible {
+    background-color: #d8c9b0;
+    transform: translateX(3px);
+}
+
+.breadcrumb {
+    margin-bottom: 10px;
+}
+
+.breadcrumb a {
+    color: #8b5e3c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+    text-decoration: underline;
+}
+
+.book-detail {
+    text-align: center;
+}
+
+.book-detail img {
+    width: 180px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    margin: 15px 0;
+}
+
+.book-info {
+    text-align: left;
+    background-color: #f9f6f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.book-info p {
+    margin: 6px 0;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #8b5e3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    text-decoration: underline;
+}
+
+.site-footer {
+    text-align: center;
+    color: #8a7c6a;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+a:focus-visible {
+    outline: 2px solid #8b5e3c;
+    outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 16px;
+    }
+    ul.book-list li a {
+        font-size: 16px;
+    }
+}
