@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lab 4 - Country and Capital</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; }
+  select { font-size: 16px; padding: 4px; }
+  #capital {
+    color: darkgreen;      /* font color */
+    font-weight: bold;     /* bold */
+    font-size: 24px;       /* font size */
+    margin-left: 15px;
+  }
+</style>
+</head>
+<body>
+  <h2>Select a Country</h2>
+
+  <select id="country" onchange="showCapital()">
+    <option value="">-- Choose --</option>
+    <option value="New Delhi">India</option>
+    <option value="Washington, D.C.">USA</option>
+    <option value="London">United Kingdom</option>
+    <option value="Tokyo">Japan</option>
+    <option value="Paris">France</option>
+  </select>
+
+  <span id="capital"></span>
+
+  <script>
+    function showCapital() {
+      var sel = document.getElementById("country");
+      var cap = sel.value;
+      document.getElementById("capital").innerHTML =
+        cap ? "Capital: " + cap : "";
+    }
+  </script>
+</body>
+</html>
