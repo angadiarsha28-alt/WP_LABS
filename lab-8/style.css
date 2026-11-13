@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2f5;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1d2b36;
+  padding: 16px;
+}
+.card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border: 1px solid #c5d0d8;
+  border-radius: 10px;
+  padding: 24px;
+}
+h1 { font-size: 1.4rem; margin: 0 0 4px; }
+p.sub { margin: 0 0 18px; color: #5b6b78; font-size: .95rem; }
+label { display: block; margin: 12px 0 4px; font-size: .95rem; }
+input[type="text"], input[type="tel"], input[type="email"], select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #c5d0d8;
+  border-radius: 6px;
+}
+input:focus, select:focus, button:focus-visible, a.btn:focus-visible {
+  outline: 2px solid #1f6f8b;
+  outline-offset: 1px;
+}
+.radios { display: flex; gap: 18px; }
+.radios label { display: inline-block; margin: 0; }
+.err { display: block; color: #b3261e; font-size: .85rem; min-height: 1em; margin-top: 3px; }
+input.invalid, select.invalid { border-color: #b3261e; }
+.buttons { display: flex; gap: 10px; margin-top: 18px; }
+button, a.btn {
+  flex: 1;
+  padding: 11px;
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid #1f6f8b;
+  background: #1f6f8b;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+button.secondary { background: transparent; color: #1f6f8b; }
+table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #dde4e9; font-size: .98rem; word-break: break-word; }
+th { width: 38%; color: #5b6b78; font-weight: normal; }
