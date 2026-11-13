@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+  <student>
+    <rollno>101</rollno>
+    <name>Varsha A</name>
+    <department>Computer Applications</department>
+    <city>Kurnool</city>
+    <marks>88</marks>
+  </student>
+  <student>
+    <rollno>102</rollno>
+    <name>Ravi Kumar</name>
+    <department>Computer Science</department>
+    <city>Hyderabad</city>
+    <marks>76</marks>
+  </student>
+  <student>
+    <rollno>103</rollno>
+    <name>Anitha Reddy</name>
+    <department>Information Technology</department>
+    <city>Bengaluru</city>
+    <marks>91</marks>
+  </student>
+  <student>
+    <rollno>104</rollno>
+    <name>Suresh Babu</name>
+    <department>Computer Science</department>
+    <city>Chennai</city>
+    <marks>69</marks>
+  </student>
+  <student>
+    <rollno>105</rollno>
+    <name>Meena Kumari</name>
+    <department>Computer Applications</department>
+    <city>Tirupati</city>
+    <marks>83</marks>
+  </student>
+</students>
