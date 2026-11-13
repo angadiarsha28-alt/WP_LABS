@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 9 - XML Data in a Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Student Details</h1>
+    <p class="sub">Data is read from <code>students.xml</code> and shown as a table.</p>
+
+    <p class="status" id="status">Loading data...</p>
+
+    <div class="table-wrap">
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>City</th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <div class="fallback" id="fallback" hidden>
+      <p>Could not load <code>students.xml</code> automatically. This happens when the page is opened directly from a folder. Choose the XML file yourself:</p>
+      <input type="file" id="xmlFile" accept=".xml,text/xml">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
