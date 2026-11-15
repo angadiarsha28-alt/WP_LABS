@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab 10 - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="card" action="hello.html" method="get">
+    <h1>Welcome</h1>
+    <p class="sub">Enter your name and submit to start a session.</p>
+
+    <label for="name">Your name</label>
+    <input type="text" id="name" name="name" required pattern="[A-Za-z .]{2,}"
+           title="Use letters and spaces only (at least 2 characters)" placeholder="e.g. Varsha">
+
+    <div class="buttons">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
